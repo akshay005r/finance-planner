@@ -1,0 +1,49 @@
+{
+  "project": "Personal Finance Planner",
+  "currentPhase": 1,
+  "currentVersion": "1.1.2",
+  "currentRevision": 4,
+  "status": "In Development",
+  "lastUpdated": "2026-08-03",
+  "domainModel": "hybrid",
+  "decisions": {
+    "domainModel": "Brief's five modules, workbook's business logic",
+    "cashFlowShape": "Seeded lines, user may add custom lines",
+    "assetDepth": "Asset-class totals in Phase 1; instrument level in Phase 2"
+  },
+  "modules": {
+    "0-foundation": "complete",
+    "1-income": "not-started",
+    "2-expenses": "not-started",
+    "3-assets": "not-started",
+    "4-liabilities": "not-started",
+    "5-dashboard": "not-started",
+    "6-data-portability": "not-started"
+  },
+  "verification": {
+    "workbookParity": "passing",
+    "assertions": 63,
+    "lastVerified": "2026-08-03"
+  },
+  "stack": {
+    "framework": "React 18 + Vite 5",
+    "language": "TypeScript 5 (strict)",
+    "styling": "Tailwind CSS 3",
+    "routing": "react-router-dom 6",
+    "charts": "recharts 2",
+    "testing": "vitest 2",
+    "persistence": "Browser local storage",
+    "hosting": "GitHub Pages"
+  },
+  "deployment": {
+    "method": "GitHub Actions",
+    "router": "HashRouter",
+    "basePathSource": "repository name, derived at build time",
+    "gated": [
+      "test files present",
+      "npm test",
+      "npm run typecheck"
+    ],
+    "nodeVersion": "22"
+  }
+}
